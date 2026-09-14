@@ -1,0 +1,47 @@
+[
+  {
+    "post_url": "https://www.instagram.com/p/DdPM36YDDdn/",
+    "type": "carousel",
+    "analysis": {
+      "summary": "The carousel presents a beef salad as a fresh, balanced, and delicious menu item. The visuals show grilled beef with greens, avocado, cherry tomatoes, corn, and carrots, while the on-image text states that the salad is tossed in a light dressing. No caption text was provided.",
+      "strengths": [
+        "The food photography is visually prominent and clearly displays the salad and its ingredients.",
+        "The dish name, \"Beef Salad,\" is immediately identifiable in both carousel images.",
+        "The on-image ingredient description communicates the main components and mentions a light dressing.",
+        "The phrases \"Fresh,\" \"Balanced,\" and \"Delicious\" provide a concise positioning message.",
+        "The carousel format provides two visual presentations of the same dish."
+      ],
+      "marketing_gaps": [
+        "There is no provided caption copy adding context, details, or a promotional message.",
+        "The post does not provide a price, location, ordering information, availability, or restaurant identification.",
+        "No visible brand logo or other distinctive restaurant branding appears in the provided images.",
+        "The two carousel images are very similar, so the second slide may add limited informational or visual variety.",
+        "The post does not communicate a specific differentiator beyond the listed ingredients and general freshness claims."
+      ],
+      "cta": {
+        "present": false,
+        "evidence": "No call to action is visible in the images, and the caption field is empty. The post does not instruct viewers to order, visit, comment, save, share, or take another action."
+      },
+      "branding_observation": "The visual treatment uses a dark background, centered food photography, elegant typography, and restrained text placement, creating a polished and consistent-looking presentation within the carousel. However, no restaurant name or logo is visible, so the restaurant's broader brand identity cannot be confirmed from this post alone.",
+      "engagement_observation": "The post received 13 likes and 1 comment. These figures show some audience interaction, but there is not enough evidence to determine whether performance is strong or weak without account benchmarks, reach, follower count, or historical comparisons. The post itself does not explicitly invite conversation or other engagement.",
+      "improvement_opportunities": [
+        "Add a caption with a clear value proposition and relevant ordering or visit information.",
+        "Include a direct call to action, such as inviting viewers to order the salad, visit the restaurant, or share their preferred salad toppings.",
+        "Add restaurant branding, such as a logo or name, if brand recognition is a priority.",
+        "Use the second carousel slide for complementary content, such as a close-up, ingredient detail, preparation view, price, or ordering instruction.",
+        "Consider including location, availability, or menu context where applicable.",
+        "Add an engagement prompt that encourages comments, saves, or shares."
+      ],
+      "evidence_used": [
+        "Caption field is empty.",
+        "Post type is carousel.",
+        "Images display a salad labeled \"Beef Salad.\"",
+        "On-image text lists grilled beef, fresh greens, avocado, cherry tomatoes, corn, carrots, and a light dressing.",
+        "On-image text includes the descriptors \"Fresh,\" \"Balanced,\" and \"Delicious.\"",
+        "The provided images show similar overhead presentations of the same dish.",
+        "Metadata reports 13 likes and 1 comment.",
+        "No visible call to action, restaurant name, or logo appears in the provided visual evidence."
+      ]
+    }
+  }
+]

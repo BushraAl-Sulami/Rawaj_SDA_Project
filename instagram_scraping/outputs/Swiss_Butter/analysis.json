@@ -1,0 +1,46 @@
+[
+  {
+    "post_url": "https://www.instagram.com/p/DdOagAqR1QJ/",
+    "type": "reel",
+    "analysis": {
+      "summary": "The reel presents beef and salmon dishes served in a skillet with a yellow Swiss butter sauce, fries, bread, salad, and chili flakes. The caption frames the content as a choice between the two proteins and uses the hashtag #SwissButter.",
+      "strengths": [
+        "The food is shown prominently through close-up visual shots.",
+        "The pouring sauce, plated dishes, and tasting moment create appetizing and sensory-focused content.",
+        "Showing both beef and salmon supports the comparison posed in the caption.",
+        "The short caption is easy to understand and directly connected to the visuals.",
+        "The question format can encourage viewers to share a preference."
+      ],
+      "marketing_gaps": [
+        "The post does not provide the restaurant name, location, menu item names, price, or ordering information in the available evidence.",
+        "The caption does not explain what makes the Swiss butter sauce distinctive.",
+        "There is no visible offer, promotion, reservation information, or link direction provided.",
+        "The available visual evidence does not clearly show a logo, restaurant signage, or other strong brand identifiers.",
+        "It cannot be determined from the provided evidence whether the dishes shown are currently available."
+      ],
+      "cta": {
+        "present": true,
+        "evidence": "The caption asks, \"Are you team beef or salmon?\", which directly invites viewers to respond with a preference."
+      },
+      "branding_observation": "The #SwissButter hashtag and repeated presentation of a yellow butter-based sauce provide a recognizable product or dish theme. However, the available evidence does not establish a broader brand identity or clearly identify the restaurant.",
+      "engagement_observation": "The either-or question is a simple participation prompt likely intended to encourage comments. The post received 278 likes and 7 comments, but performance cannot be evaluated further without account benchmarks, reach, or comparable posts.",
+      "improvement_opportunities": [
+        "Add the restaurant name and location to improve brand recognition and visit intent.",
+        "Identify the dishes and clarify whether viewers can order beef, salmon, or both.",
+        "Add a stronger action such as inviting users to visit, reserve, order, or tag someone who would choose one option.",
+        "Explain the Swiss butter sauce or highlight a specific ingredient or preparation detail.",
+        "Include relevant menu, availability, or promotional information where applicable.",
+        "Use on-screen text or end-frame branding to make the restaurant and featured dish easier to identify."
+      ],
+      "evidence_used": [
+        "Caption: \"Are you team beef or salmon? #SwissButter\"",
+        "Post type: reel",
+        "Visuals show salmon and beef served in black skillets with a yellow sauce.",
+        "Visuals also show fries, bread, salad, and chili flakes.",
+        "Visuals show sauce being poured and food being tasted.",
+        "Post metadata lists 278 likes and 7 comments.",
+        "No restaurant name, location, price, offer, or ordering details were provided."
+      ]
+    }
+  }
+]
