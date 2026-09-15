@@ -1,0 +1,351 @@
+{
+  "restaurant": {
+    "restaurant_id": 3,
+    "name": "The Bay Restaurant",
+    "instagram_username": "thebayrestaurant_jed",
+    "instagram_url": "https://www.instagram.com/thebayrestaurant_jed/",
+    "email": null,
+    "location": "Jedaah",
+    "category": "Cafe, Restaurant, Food & Beverage Company"
+  },
+  "analysis_metadata": {
+    "status": "partial",
+    "analyzed_at": "2026-09-14T07:41:51.804323+00:00",
+    "posts_scraped": 6,
+    "posts_analyzed": 5,
+    "posts_failed": 1,
+    "source": "instagram",
+    "analysis_version": "1.0"
+  },
+  "profile": {
+    "username": "thebayrestaurant_jed",
+    "full_name": "•The BAY• 🍃 •ذا باي•",
+    "bio": "Refined Indian Cuisine 🇮🇳 \nBold Flavors, Modern Soul.\n📍The bay, Jeddah",
+    "followers": 20474,
+    "following": 1,
+    "posts_count": 432,
+    "website": "https://linktr.ee/thebayrestaurant_jed?utm_source=linktree_profile_share&ltsid=e5bd1dd7-599f-4005-84d2-9819fd8d0f9e",
+    "verified": false,
+    "business_category": "Restaurant",
+    "is_business": true,
+    "is_private": false
+  },
+  "metrics": {
+    "posting_activity": {
+      "posts_last_30_days": 4,
+      "posts_per_week": 0.93,
+      "days_since_last_post": 10
+    },
+    "engagement": {
+      "average_likes": 6.33,
+      "average_comments": 0.0,
+      "engagement_rate": 0.031
+    },
+    "video_usage": {
+      "video_posts": 2,
+      "image_posts": 3,
+      "total_posts_analyzed": 6,
+      "video_percentage": 33.33
+    }
+  },
+  "content_summary": {
+    "posts_successfully_analyzed": 5,
+    "posts_failed": 1,
+    "posts_with_cta": 2,
+    "cta_rate": 40.0,
+    "promotional_posts": 3,
+    "promotion_rate": 60.0,
+    "menu_visible_posts": 1,
+    "menu_visibility_rate": 20.0,
+    "price_visible_posts": 0,
+    "price_visibility_rate": 0.0,
+    "offer_visible_posts": 1,
+    "logo_visible_posts": 5,
+    "logo_visibility_rate": 100.0,
+    "branding_visible_posts": 5,
+    "branding_visibility_rate": 100.0,
+    "content_distribution": {
+      "behind-the-scenes kitchen team video featuring chefs": 1,
+      "a product-focused delivery promotion for a group meal box.": 1,
+      "a chef-focused appreciation post portraying the chef’s positive reaction to diners praising the food.": 1,
+      "a stylized wanted-poster-themed restaurant promotional carousel cover.": 1,
+      "close-up food showcase of a chicken jalfrezi dish.": 1
+    },
+    "top_content_themes": {
+      "kitchen staff": 1,
+      "chef teamwork": 1,
+      "behind-the-scenes": 1,
+      "nonverbal communication": 1,
+      "restaurant operations": 1,
+      "group gatherings": 1,
+      "family meals": 1,
+      "sharing food": 1,
+      "indian-style dishes": 1,
+      "food delivery": 1
+    }
+  },
+  "posts": [
+    {
+      "post_id": "3978191455334274934",
+      "post_url": "https://www.instagram.com/p/Dc1YA0fsZd2/",
+      "timestamp": "2026-09-03T17:44:30.000Z",
+      "caption": "No words, just the nod. If you know, you know 😏\n\nما يحتاج كلام.. هزّة رأس تكفي 😏",
+      "post_type": "Video",
+      "product_type": "clips",
+      "image_urls": [
+        "https://instagram.fbne6-1.fna.fbcdn.net/v/t51.71878-15/793141641_2349445085860544_1235328112665911114_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=instagram.fbne6-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2gECGjKwWDK3VQ4RQUAryWdY--B5xcccBuga-DwmFkn6503wd37C5a8SWNoAgGc4hmc&_nc_ohc=F3enNQNgbzkQ7kNvwE0LEst&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQI0f0_stZmj1Le1Nn4J8I5AUcsjew16vXVdllPThtuAPA&oe=6AAD7194&_nc_sid=bc0c2c"
+      ],
+      "video_url": "https://instagram.fbne5-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMsA2lSrZNzx8fbJhBKPZF6X4AQORLqWfU3LQuTn_wqBMexWejJF6xk9U17OSp39vbFlXzr8_6aFnqr1qtwFW-DJvED0wMVA7qwe0U.mp4?_nc_cat=102&_nc_oc=AdpEUD-J4WWSDDiDJv-B82DfxCmdCHzLkNVGXplM8KCIfvCGt6OIA5z0iHWx2yJ04G4&_nc_sid=5e9851&_nc_ht=instagram.fbne5-1.fna.fbcdn.net&_nc_ohc=MbER5Frj1Q4Q7kNvwEly5i-&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDgzMzg4MDA1MzQ5NjMxNSwiYXNzZXRfYWdlX2RheXMiOjEwLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=3ee0852f11fa3141&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EMDQxODIxMzU3MUE3RDBBNkY1RDg0QjVDNTE1NzM4Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0YwNDJDNTI3QkE1N0YyOEJDOUUxMzZEMkNEMzc0QUE1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb258337JiWERUCKAJDMywXQA0AAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&_nc_ss=7a22e&_nc_zt=28&oh=00_AQKALhpdewaixTDxr1WtfSkkq3GKVqONLHY-6nD_PSRliA&oe=6AA97F07",
+      "likes": 10,
+      "comments": 0,
+      "video_views": null,
+      "analysis": {
+        "has_cta": false,
+        "cta_description": null,
+        "is_promotional": false,
+        "promotion_description": null,
+        "content_type": "Behind-the-scenes kitchen team video featuring chefs",
+        "content_themes": [
+          "kitchen staff",
+          "chef teamwork",
+          "behind-the-scenes",
+          "nonverbal communication",
+          "restaurant operations"
+        ],
+        "food_visible": false,
+        "menu_visible": false,
+        "price_visible": false,
+        "offer_visible": false,
+        "logo_visible": true,
+        "branding_visible": true,
+        "people_visible": true,
+        "text_in_image": null,
+        "visual_summary": "The video frame shows several chefs in a commercial kitchen. A central chef in a black uniform with red trim and a tall white chef hat faces the camera; other chefs are partially visible on either side. A small embroidered logo and Arabic lettering appear on the central chef's uniform.",
+        "caption_summary": "The bilingual English and Arabic caption says that a nod is enough and implies an insider understanding of a nonverbal exchange.",
+        "evidence": [
+          "The caption reads, “No words, just the nod. If you know, you know,” followed by the Arabic equivalent.",
+          "Multiple people wearing chef uniforms and chef hats are visible in a stainless-steel kitchen setting.",
+          "No food, menu, prices, offer details, ordering information, or invitation to take an action are shown.",
+          "An embroidered emblem with small Arabic text is visible on the central chef's uniform, though the wording is not clearly legible."
+        ],
+        "confidence": 0.94
+      },
+      "analysis_error": null
+    },
+    {
+      "post_id": "3970867451053448404",
+      "post_url": "https://www.instagram.com/p/DcbWuh-M5zU/",
+      "timestamp": "2026-08-24T15:11:52.000Z",
+      "caption": "من جمعة الاصحاب او لمة العيلة … بوكس الجمعات يخلي الأجواء أطيب واللمة احلى ✨\nالبوكس يشمل: ٣ ارز برياني، ١ دجاج بالزبدة، ١ دجاج تيكا مسالا، ١ دجاج شت بت، ١ دجاج ٦٥، ٢ سمبوسة بنجابية بالبطاطس، ١ سمبوسة دجاج تيكا مسالا\n\nThe perfect box for your gatherings — Sharing Box from The Bay.\nAvailable on delivery apps.",
+      "post_type": "Image",
+      "product_type": null,
+      "image_urls": [
+        "https://instagram.fbne5-1.fna.fbcdn.net/v/t51.82787-15/783753429_18102308423214876_2861013784542035282_n.heic?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fbne5-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gECGjKwWDK3VQ4RQUAryWdY--B5xcccBuga-DwmFkn6503wd37C5a8SWNoAgGc4hmc&_nc_ohc=cADMpR6Cmh0Q7kNvwECTJ5A&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQKhvphkGRPUfF-RAVMuNno_6yxmHqQ3_NwX9uEmbZcUQg&oe=6AAD9061&_nc_sid=bc0c2c"
+      ],
+      "video_url": null,
+      "likes": 5,
+      "comments": 0,
+      "video_views": null,
+      "analysis": {
+        "has_cta": true,
+        "cta_description": "The post encourages audiences to get the Sharing Box through the listed delivery apps.",
+        "is_promotional": true,
+        "promotion_description": "It promotes The Bay's Sharing Box as a meal for friends' gatherings and family get-togethers, displaying its included dishes and delivery availability.",
+        "content_type": "A product-focused delivery promotion for a group meal box.",
+        "content_themes": [
+          "group gatherings",
+          "family meals",
+          "sharing food",
+          "Indian-style dishes",
+          "food delivery",
+          "Sharing Box"
+        ],
+        "food_visible": true,
+        "menu_visible": true,
+        "price_visible": false,
+        "offer_visible": true,
+        "logo_visible": true,
+        "branding_visible": true,
+        "people_visible": false,
+        "text_in_image": "بوكس الجمعات / sharing box; The Bay Restaurant; delivery-platform logos: noon Food, Mrsool, Keeta, ToYou, Ninja, Jahez, and HungerStation.",
+        "visual_summary": "A branded The Bay food box is shown open against red draped fabric, containing several bowls of rice, chicken dishes, sauces, and samosas. The image labels it as a Sharing Box and shows logos for multiple delivery platforms.",
+        "caption_summary": "The Arabic and English caption presents The Bay Sharing Box for friend and family gatherings, lists the box contents—three biryani rice portions, several chicken dishes, and samosas—and states that it is available on delivery apps.",
+        "evidence": [
+          "The caption calls the product the 'Sharing Box from The Bay' and says it is suitable for gatherings.",
+          "The caption lists biryani rice, butter chicken, chicken tikka masala, chicken 65, another chicken dish, and samosas as box contents.",
+          "The image visibly shows an open box with multiple prepared food portions and samosas.",
+          "The image includes The Bay Restaurant logo on the box lid.",
+          "The image displays delivery-platform logos, and the caption says 'Available on delivery apps.'",
+          "No price or discount amount is shown in the caption or image."
+        ],
+        "confidence": 0.98
+      },
+      "analysis_error": null
+    },
+    {
+      "post_id": "3968029900772993588",
+      "post_url": "https://www.instagram.com/p/DcRRivVs-o0/",
+      "timestamp": "2026-08-20T17:14:10.000Z",
+      "caption": "Nothing makes a chef happier than hearing ‘this is so good’ 🤩\nأكثر شي يفرّح الشيف لما يسمع: الأكل رهيب",
+      "post_type": "Image",
+      "product_type": null,
+      "image_urls": [
+        "https://instagram.fbne5-1.fna.fbcdn.net/v/t51.82787-15/779995586_18101920241214876_7600094162620555246_n.heic?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fbne5-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gECGjKwWDK3VQ4RQUAryWdY--B5xcccBuga-DwmFkn6503wd37C5a8SWNoAgGc4hmc&_nc_ohc=alS-31DG82gQ7kNvwGB3cTi&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQK4a-cXDrcVG_B6EbO-UK7FpFshPTv0ZiOkJxtgdRQYGg&oe=6AAD7146&_nc_sid=bc0c2c"
+      ],
+      "video_url": null,
+      "likes": 3,
+      "comments": 0,
+      "video_views": null,
+      "analysis": {
+        "has_cta": false,
+        "cta_description": null,
+        "is_promotional": false,
+        "promotion_description": null,
+        "content_type": "A chef-focused appreciation post portraying the chef’s positive reaction to diners praising the food.",
+        "content_themes": [
+          "chef personality",
+          "customer satisfaction",
+          "positive dining feedback",
+          "restaurant hospitality"
+        ],
+        "food_visible": false,
+        "menu_visible": false,
+        "price_visible": false,
+        "offer_visible": false,
+        "logo_visible": true,
+        "branding_visible": true,
+        "people_visible": true,
+        "text_in_image": "THE BAY RESTAURANT & LOUNGE; POV: THE CHEF’S SMILE WHEN HE HEARS YOUR TABLE SAY \"THIS IS SO GOOD\"",
+        "visual_summary": "A smiling chef in a chef’s hat and dark uniform is shown in a framed portrait against a wood-paneled background. The Bay Restaurant & Lounge logo appears in the upper-right, and a caption-style message is displayed beneath the portrait.",
+        "caption_summary": "In English and Arabic, the caption says that hearing diners say the food is very good makes a chef happiest.",
+        "evidence": [
+          "The image shows one chef smiling while wearing a chef’s hat and uniform.",
+          "The caption and image text both center on a diner complimenting the food.",
+          "No dish, menu, price, offer, event detail, or ordering/reservation instruction is shown.",
+          "The upper-right corner contains The Bay Restaurant & Lounge name and logo."
+        ],
+        "confidence": 0.99
+      },
+      "analysis_error": null
+    },
+    {
+      "post_id": "3965800422508275756",
+      "post_url": "https://www.instagram.com/p/DcJWnj5sygs/",
+      "timestamp": "2026-08-17T15:27:32.000Z",
+      "caption": "🧍🏻‍♂️الموظف و هو يتفرج على مضاربة الحساب",
+      "post_type": "Video",
+      "product_type": "clips",
+      "image_urls": [
+        "https://instagram.fbne5-1.fna.fbcdn.net/v/t51.71878-15/776877180_2879374315777190_7165354420581057825_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=instagram.fbne5-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2gECGjKwWDK3VQ4RQUAryWdY--B5xcccBuga-DwmFkn6503wd37C5a8SWNoAgGc4hmc&_nc_ohc=mX4Lt_avgqMQ7kNvwGjrRGV&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQI79mOhDmxF8KsY0tCFCGcB67qvJCpgUDsQStOFo7jrSQ&oe=6AAD6580&_nc_sid=bc0c2c"
+      ],
+      "video_url": "https://instagram.fbne6-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQOpRHFpGaqjdpwD_goqVvwInoNpLhy4xTjxlFPgTTY89E8gayOs5nv9KjXNFr1E4-EczhaaFj-D5fcON1-bQRI-5DPyKiPtwLvD-3g.mp4?_nc_cat=111&_nc_oc=Adp_2Jc3rd8mXGniHqiPasjsWlL-WVxqHDu0j_i_vpvXIRefUJ9iSiTWVrcu9eoHq7o&_nc_sid=5e9851&_nc_ht=instagram.fbne6-1.fna.fbcdn.net&_nc_ohc=SSPBX6ZbZTkQ7kNvwF0MrF5&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjEwNDk3MDY4MDQ0OTc1MiwiYXNzZXRfYWdlX2RheXMiOjI3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6OCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a3675753f679d86&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9GNzRDRDU3NzBGQzI0ODRFNEE5NDk2QzVGNjdCRjNBMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzY1NDc1NjE1QkQ4QzhENDkzRTlDNDRDMTVDODNFM0FBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaw693atZ29BxUCKAJDMywXQCAAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&_nc_ss=7a22e&_nc_zt=28&oh=00_AQLviBvtIqucHgQ74jOm4-JEs4zc8-uqb-_jYRCrgUe59g&oe=6AA96BCC",
+      "likes": 9,
+      "comments": 0,
+      "video_views": null,
+      "analysis": null,
+      "analysis_error": "Connection error."
+    },
+    {
+      "post_id": "3962901620933273078",
+      "post_url": "https://www.instagram.com/p/Db_DgcjjCX2/",
+      "timestamp": "2026-08-13T15:25:08.000Z",
+      "caption": "Swipe to see the evidence 👀\n\n#اكل_هندي #مطاعم #جدة",
+      "post_type": "Sidecar",
+      "product_type": null,
+      "image_urls": [
+        "https://instagram.fbne5-1.fna.fbcdn.net/v/t51.82787-15/774361883_18101159072214876_2833560885691486813_n.heic?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fbne5-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gECGjKwWDK3VQ4RQUAryWdY--B5xcccBuga-DwmFkn6503wd37C5a8SWNoAgGc4hmc&_nc_ohc=DUXvoo4CyfcQ7kNvwHR_yFf&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQJP89O4-hTR444EQSi8CmYlRev0G7yOF_YorPTWmfS_9w&oe=6AAD72A2&_nc_sid=bc0c2c"
+      ],
+      "video_url": null,
+      "likes": 10,
+      "comments": 0,
+      "video_views": null,
+      "analysis": {
+        "has_cta": true,
+        "cta_description": "The caption encourages viewers to swipe through the carousel to see the “evidence.”",
+        "is_promotional": true,
+        "promotion_description": "The post promotes The Bay Restaurant’s Indian food by presenting a person as “wanted” for making the best Indian dishes in Jeddah.",
+        "content_type": "A stylized wanted-poster-themed restaurant promotional carousel cover.",
+        "content_themes": [
+          "Indian cuisine",
+          "Jeddah restaurants",
+          "chef or food-maker spotlight",
+          "humorous wanted-poster visual",
+          "restaurant branding"
+        ],
+        "food_visible": false,
+        "menu_visible": false,
+        "price_visible": false,
+        "offer_visible": false,
+        "logo_visible": true,
+        "branding_visible": true,
+        "people_visible": true,
+        "text_in_image": "THE BAY RESTAURANT\nWANTED\nFOR MAKING THE BEST INDIAN DISHES IN JEDDAH",
+        "visual_summary": "A sepia, distressed-paper poster styled like a Western “wanted” notice shows a portrait of a man. The Bay Restaurant logo appears at the top, with a claim below the portrait about making the best Indian dishes in Jeddah.",
+        "caption_summary": "The caption asks viewers to swipe to see supporting “evidence,” and uses Arabic hashtags for Indian food, restaurants, and Jeddah.",
+        "evidence": [
+          "The caption says, “Swipe to see the evidence 👀,” directing viewers to interact with the carousel.",
+          "The image displays The Bay Restaurant logo at the top.",
+          "The main image text reads “WANTED” and “FOR MAKING THE BEST INDIAN DISHES IN JEDDAH.”",
+          "A man’s portrait is centrally visible.",
+          "No food, menu items, prices, or specific offer details are visible in the supplied image."
+        ],
+        "confidence": 0.98
+      },
+      "analysis_error": null
+    },
+    {
+      "post_id": "3957941535541038556",
+      "post_url": "https://www.instagram.com/p/DbtbttDsA3c/",
+      "timestamp": "2026-08-06T19:10:22.000Z",
+      "caption": "Every detail tells a FLAVOR story!\n\nChicken Jalfrezi, in its finest form.",
+      "post_type": "Image",
+      "product_type": null,
+      "image_urls": [
+        "https://instagram.fbne5-1.fna.fbcdn.net/v/t51.82787-15/767160276_18100487426214876_7000467002099844621_n.heic?stp=dst-jpg_e35_p1080x1080_sh2.08_tt6&_nc_ht=instagram.fbne5-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gECGjKwWDK3VQ4RQUAryWdY--B5xcccBuga-DwmFkn6503wd37C5a8SWNoAgGc4hmc&_nc_ohc=6KNOyVajsw4Q7kNvwFhXLeQ&_nc_gid=i5uWodC-L3c1RR9wYIixqQ&edm=APU89FABAAAA&ccb=7-5&oh=00_AQKwnDyVPETYNxeHP2Mbeey_WBo2VDGHcuNkfNd8aSJK6w&oe=6AAD8F64&_nc_sid=bc0c2c"
+      ],
+      "video_url": null,
+      "likes": 1,
+      "comments": 0,
+      "video_views": null,
+      "analysis": {
+        "has_cta": false,
+        "cta_description": null,
+        "is_promotional": true,
+        "promotion_description": "The post promotes the restaurant's Chicken Jalfrezi by presenting it as a refined, flavor-focused dish.",
+        "content_type": "Close-up food showcase of a Chicken Jalfrezi dish.",
+        "content_themes": [
+          "Chicken Jalfrezi",
+          "Indian-style cuisine",
+          "flavor",
+          "dish presentation",
+          "food photography"
+        ],
+        "food_visible": true,
+        "menu_visible": false,
+        "price_visible": false,
+        "offer_visible": false,
+        "logo_visible": true,
+        "branding_visible": true,
+        "people_visible": false,
+        "text_in_image": "THE BAY",
+        "visual_summary": "A close-up image shows pieces of chicken in a glossy red-brown sauce with visible pepper and onion pieces, topped with fresh coriander and thin ginger strips. A small The Bay logo appears in the upper-right corner.",
+        "caption_summary": "The caption describes Chicken Jalfrezi as a flavorful dish and emphasizes attention to detail.",
+        "evidence": [
+          "The caption explicitly names the dish as “Chicken Jalfrezi.”",
+          "The image visibly shows a prepared chicken dish in sauce, garnished with coriander and ginger.",
+          "The caption uses positive presentation language: “Every detail tells a FLAVOR story!” and “in its finest form.”",
+          "No price, menu, limited-time offer, or audience-directed action is shown.",
+          "A small “THE BAY” logo is visible at the upper right of the image."
+        ],
+        "confidence": 0.98
+      },
+      "analysis_error": null
+    }
+  ],
+  "data_quality": {
+    "profile_scrape_success": true,
+    "posts_scrape_success": true,
+    "multimodal_analysis_completed": true,
+    "failed_post_analyses": 1
+  }
+}
