@@ -1,7 +1,7 @@
 {
   "restaurant": "The Bay Restaurant",
-  "qualification": "QUALIFIED",
-  "decision_rationale": "The Bay Restaurant has multiple meaningful and actionable Instagram marketing gaps. Reported engagement is substantially below the available food and beverage benchmark, recent posting frequency is relatively low, menu and product visibility are limited, no prices were visible in the analyzed sample, customer-oriented CTAs appeared in less than half of the analyzed posts, and public audience interaction was minimal. The account also has strengths including consistent branding, recognizable positioning, bilingual content, visual variety, and the ability to communicate a delivery product effectively. The qualification is based only on the restaurant's Instagram marketing gaps and supplied evidence; it does not infer revenue impact or business performance outside Instagram.",
+  "qualification": "Qualified for Rawaj.",
+  "decision_rationale": "The restaurant has clear and meaningful Instagram marketing gaps supported by its own account evidence and relevant external benchmarks. The main weaknesses are very low audience engagement, limited menu and price visibility, incomplete conversion-oriented communication, low posting frequency, inconsistent calls to action, and limited observable audience conversation. These weaknesses are balanced by strong branding consistency, clear Indian cuisine positioning, bilingual communication, content variety, and visible delivery-product promotion. The decision is based on marketing performance only and does not re-evaluate the restaurant’s ICP status.",
   "marketing_gaps": [
     {
       "gap": "Very Low Audience Engagement",
@@ -9,123 +9,119 @@
       "priority": 1,
       "evidence": [
         "The account has 20,474 followers.",
-        "Average likes are 6.33 per post.",
-        "Average comments are 0.0.",
-        "The reported engagement rate is 0.031%.",
-        "Analyzed posts received only 1–10 likes each and no comments.",
-        "Dash Social’s 2026 Food and Beverage Industry Benchmarks reports an average Instagram engagement rate of 0.4% across the food and beverage industry.",
-        "Dash Social also provides a 2.0%–2.5% reference range for strong Instagram performance by food and beverage brands.",
-        "The Bay’s reported engagement rate is approximately 13 times below the cited 0.4% industry average.",
-        "Reach, impressions, saves, and shares are unavailable, and the restaurant’s engagement-rate methodology is not fully documented."
+        "Average likes: 6.33.",
+        "Average comments: 0.0.",
+        "Reported engagement rate: 0.031, interpreted as approximately 0.031%.",
+        "Recent posts received between 1 and 10 likes.",
+        "Rival IQ’s 2025 all-industry Instagram median is 0.36%.",
+        "Dash Social’s 2026 food and beverage directional Instagram benchmark is approximately 2.0%–2.5%.",
+        "The interpreted rate of approximately 0.031% is below both external reference points.",
+        "The benchmarks use different methodologies and are not universal targets."
       ],
-      "recommendation_focus": "Improve audience engagement and content performance through stronger, more relevant content and clearer interaction opportunities, while validating performance with more complete reach and engagement data."
+      "recommendation_focus": "Improve audience engagement and content performance by increasing content relevance and encouraging interaction. The available evidence does not include saves, shares, reach, impressions, profile visits, or direct messages."
     },
     {
-      "gap": "Low Recent Posting Frequency",
-      "severity": "Moderate",
+      "gap": "Limited Product and Menu Visibility",
+      "severity": "High",
       "priority": 2,
       "evidence": [
-        "The account published 4 posts in the last 30 days.",
-        "The reported frequency is 0.93 posts per week.",
-        "The account had gone 10 days without a post at the time of analysis.",
-        "Restroworks’ 2025 restaurant social media statistics article references approximately 3–4 quality posts per week as a stronger restaurant posting cadence.",
-        "The Bay’s observed frequency is materially lower than that reference.",
-        "Posting volume alone does not establish content quality or business results, and the benchmark is directional rather than universal."
+        "Menu visible in only 1 of 5 successfully analyzed posts.",
+        "Menu visibility rate: 20%.",
+        "Price visible in 0 posts.",
+        "Price visibility rate: 0%.",
+        "Only a limited portion of the recent sample visibly showed food.",
+        "The Sharing Box post listed its contents but did not show a price.",
+        "The Chicken Jalfrezi post showed a dish but did not include menu or price details.",
+        "No reliable universal benchmark was identified for restaurant menu or price visibility on Instagram.",
+        "A Linktree link is present, but the evidence does not establish whether menu or price information is available there."
       ],
-      "recommendation_focus": "Establish a more consistent publishing cadence to maintain visibility for restaurant discovery, food consideration, delivery decisions, and current offers."
+      "recommendation_focus": "Increase direct product discovery in Instagram content by showing specific dishes, menu information, prices, product selection, and relevant ordering details. The gap concerns visible Instagram content and does not establish that information is unavailable elsewhere."
     },
     {
-      "gap": "Limited Menu and Product Visibility",
+      "gap": "Weak Conversion-Oriented Communication",
       "severity": "High",
       "priority": 3,
       "evidence": [
-        "Menu visibility was found in only 1 of 5 successfully analyzed posts.",
-        "The menu visibility rate was 20%.",
-        "Only one analyzed post clearly presented a detailed product proposition: the Sharing Box.",
-        "The Chicken Jalfrezi post showed food but no menu or price.",
-        "Two chef-focused posts showed no food or menu.",
-        "The kitchen video showed chefs but no food or menu.",
-        "No reliable external benchmark was identified for the percentage of restaurant Instagram posts that should include menus or dishes.",
-        "Price visibility was 0% across the analyzed sample."
+        "CTA rate: 40%.",
+        "Only one post clearly directed users toward delivery apps.",
+        "The other CTA asked users to swipe through a carousel.",
+        "Food and promotional posts frequently lacked ordering, reservation, visitation, or inquiry instructions.",
+        "No price was shown in any analyzed post.",
+        "No reservation instruction was identified in the supplied sample.",
+        "Two of five successfully analyzed posts contained a CTA, while three did not.",
+        "Only the Sharing Box post clearly connected a product to an ordering channel.",
+        "No reliable universal benchmark was found for restaurant CTA frequency or required conversion information.",
+        "The profile contains a Linktree link, but its destinations and conversion functions were not evaluated."
       ],
-      "recommendation_focus": "Increase repeated exposure to specific dishes, menu information, and product-selection details within Instagram content."
+      "recommendation_focus": "Create clearer paths from content exposure to customer action, including ordering, reservations, visits, inquiries, prices, offer terms, and other practical purchase information."
     },
     {
-      "gap": "No Visible Price Communication",
+      "gap": "Low Posting Frequency Relative to General Instagram Brand Benchmarks",
       "severity": "Moderate",
       "priority": 4,
       "evidence": [
-        "Price was visible in 0 of the successfully analyzed posts.",
-        "The price visibility rate was 0%.",
-        "The Sharing Box post listed multiple food items and delivery platforms but did not show a price or discount amount.",
-        "The Chicken Jalfrezi post named the dish but did not show a price.",
-        "No analyzed post gave the audience a visible price reference.",
-        "No reliable external benchmark was identified establishing a universal percentage of restaurant Instagram posts that should display prices.",
-        "The absence of prices in posts does not prove that prices are unavailable through the Linktree or delivery apps."
+        "The account published 4 posts during the last 30 days.",
+        "Reported posting frequency: approximately 0.93 posts per week.",
+        "The last post was 10 days before analysis.",
+        "Rival IQ’s 2025 report states that brands across industries posted slightly more than four times per week on average.",
+        "The Bay’s recent posting frequency is materially lower than that general benchmark.",
+        "Rival IQ’s benchmark is general across industries and is not a restaurant-specific requirement.",
+        "Posting frequency alone does not establish content effectiveness."
       ],
-      "recommendation_focus": "Provide visible price or offer information where appropriate to help customers assess affordability, compare options, and evaluate promotional products."
+      "recommendation_focus": "Establish a more consistent publishing cadence to increase current content presence and audience contact, while interpreting frequency cautiously because the evidence does not establish that every restaurant must post four times per week."
     },
     {
-      "gap": "Inconsistent Customer-Oriented CTAs",
+      "gap": "Inconsistent Calls to Action",
       "severity": "Moderate",
       "priority": 5,
       "evidence": [
-        "2 of 5 successfully analyzed posts contained a CTA.",
-        "The CTA rate was 40%.",
-        "The Sharing Box post directed users to delivery apps.",
-        "The wanted-poster carousel asked users to swipe for evidence.",
-        "The kitchen, chef appreciation, and Chicken Jalfrezi posts did not include a visible ordering, reservation, visit, or inquiry CTA.",
-        "No reliable restaurant-specific benchmark was identified for the percentage of Instagram posts that should contain a CTA.",
-        "The majority of analyzed posts lacked a clear customer-action CTA."
+        "CTA rate: 40%.",
+        "The Sharing Box post directed users toward delivery apps.",
+        "The carousel requested users to swipe.",
+        "The behind-the-scenes, chef-focused, and Chicken Jalfrezi posts did not contain clear customer-action instructions.",
+        "Action prompts appeared in less than half of the successfully analyzed posts.",
+        "No reliable universal restaurant CTA benchmark was identified.",
+        "Several promotional or product-adjacent posts lacked a next step tied to ordering, visiting, or inquiry."
       ],
-      "recommendation_focus": "Use explicit customer-oriented calls to action more consistently, directing audiences toward ordering, visiting, reserving, inquiring, or using delivery channels."
+      "recommendation_focus": "Use explicit, objective-specific action prompts more consistently, such as ordering, visiting, making an inquiry, exploring the menu, or reserving."
     },
     {
-      "gap": "Weak Observable Audience Conversation",
+      "gap": "Limited Observable Audience Conversation",
       "severity": "Moderate",
       "priority": 6,
       "evidence": [
-        "Average comments were 0.0.",
-        "No comments were recorded on any successfully analyzed post.",
-        "Average likes were also very low at 6.33.",
-        "The content includes some interactive prompts, but no public discussion was visible in the sample.",
-        "No sufficiently comparable restaurant-specific comments-per-post benchmark was identified.",
-        "The finding has moderate confidence because private messages, story replies, shares, saves, and other interactions are unavailable."
+        "Average comments: 0.0.",
+        "No comments were recorded on the successfully analyzed posts.",
+        "Captions generally do not ask questions or invite audience responses.",
+        "The supplied sample shows no visible comment activity and very low overall engagement.",
+        "No reliable restaurant-specific benchmark for comment volume was identified.",
+        "Saves, shares, direct messages, and other interactions were unavailable, so comments do not capture all forms of Instagram engagement."
       ],
-      "recommendation_focus": "Strengthen community engagement and audience interaction through content designed to stimulate conversation, feedback, and participation, while tracking interaction types beyond public comments."
+      "recommendation_focus": "Encourage public discussion and community interaction through captions and content that invite responses. Confidence is moderate because available data covers comments but not other interaction types."
     }
   ],
   "strengths": [
-    "Clear positioning: the bio identifies the restaurant as refined Indian cuisine in Jeddah.",
-    "Consistent branding: the logo and branding were visible in all successfully analyzed posts.",
-    "Existing content variety: the account uses images, videos, and a carousel format.",
-    "Content themes include food, chefs, kitchen operations, humor, gatherings, and delivery.",
-    "Bilingual communication: several captions use both English and Arabic, supporting communication with a broader local audience.",
-    "Existing promotional capability: the Sharing Box post identifies the product, its contents, intended group occasion, and delivery availability.",
-    "Delivery accessibility: the Sharing Box post displays multiple delivery platforms, including Noon Food, Mrsool, Keeta, ToYou, Ninja, Jahez, and HungerStation.",
-    "Some customer-oriented CTAs are present: the Sharing Box post directs users to delivery apps, and the carousel asks viewers to swipe through the content.",
-    "Recognizable content personality: chef-focused and humorous posts provide a human and distinctive tone.",
-    "Food presentation quality: the Chicken Jalfrezi post provides a visually clear close-up of a prepared dish with descriptive captioning."
+    "Strong brand consistency: branding was visible in all five successfully analyzed posts, and the logo appeared consistently.",
+    "The profile clearly identifies Indian cuisine and Jeddah and maintains a recognizable identity across food, staff, and promotional content.",
+    "Clear cuisine positioning through the refined Indian cuisine bio and references to dishes including Chicken Jalfrezi, biryani, butter chicken, chicken tikka masala, chicken 65, and samosas.",
+    "Bilingual communication: several captions use both English and Arabic.",
+    "Existing content variety across images, videos, and carousel content, with themes including kitchen activity, chefs, food, delivery, gatherings, and humor.",
+    "Some clear promotional execution: the Sharing Box post names the product, shows the food, lists included dishes, positions it for group and family occasions, displays delivery platforms, and states that it is available through delivery apps.",
+    "Delivery availability is visible through delivery-platform logos and explicit delivery-app messaging."
   ],
   "data_limitations": [
-    "The research status is partial.",
-    "Six posts were scraped, but only five were successfully analyzed.",
+    "The analysis status is partial: six posts were scraped, but only five were successfully analyzed.",
+    "The supplied metric summary reports total posts analyzed as six while the content summary states that five were successfully analyzed, creating a minor denominator inconsistency.",
     "One post failed analysis because of a connection error.",
-    "The available sample is small relative to the account’s 432 total posts.",
-    "Reach and impressions are unavailable.",
-    "Saves and shares are unavailable.",
-    "Profile visits are unavailable.",
-    "Website clicks and delivery-app clicks are unavailable.",
-    "Direct messages and story interactions are unavailable.",
-    "Conversion data is unavailable.",
-    "Follower growth data is unavailable.",
-    "The reported engagement rate methodology is not fully documented.",
-    "Average likes and engagement figures may be affected by the small and partially analyzed sample.",
-    "The benchmark studies use different account samples, definitions, time periods, and methodologies.",
-    "Dash Social’s benchmark includes accounts with at least 1,000 followers and includes organic, boosted, and promoted content while excluding paid ads; this may not be directly equivalent to The Bay’s reported metric.",
-    "Posting-frequency references are directional benchmarks, not universal performance requirements.",
-    "Absence of prices or CTAs in analyzed posts does not prove that the information is unavailable elsewhere, including the Linktree or delivery apps.",
-    "Missing data has not been treated as zero except where the supplied research explicitly reported zero, such as average comments and price visibility."
+    "Reach, impressions, saves, shares, profile visits, website taps, Linktree clicks, direct messages, inquiries, reservation conversions, and delivery orders attributed to Instagram were unavailable.",
+    "Video views were unavailable for both video posts.",
+    "The engagement-rate formatting is ambiguous. The reported 0.031 appears consistent with approximately 0.031%, but the source does not explicitly clarify the unit.",
+    "The sample is small, covering only six recent posts, with one failed analysis.",
+    "Benchmark sources use different definitions, account samples, follower ranges, and engagement formulas.",
+    "Rival IQ’s posting benchmark is general across industries rather than specific to restaurants.",
+    "Dash Social’s food and beverage benchmark includes global accounts and may not represent local independent restaurants in Jeddah.",
+    "Missing information was not treated as zero unless the supplied evidence explicitly reported zero, such as average comments or price visibility.",
+    "No sufficiently reliable universal benchmark was identified for menu visibility, price visibility, restaurant CTA rates, promotional detail requirements, conversion-information volume, or comment rates."
   ],
   "restaurant_id": null,
   "agent": "Qualification & Marketing Gap Analysis Agent"
