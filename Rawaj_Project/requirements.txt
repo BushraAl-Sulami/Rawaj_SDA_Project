@@ -6,3 +6,5 @@ langchain-openai
 pydantic
 typing-extensions
 openai
+sqlalchemy
+langchain-tavily

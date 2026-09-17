@@ -7,11 +7,11 @@ def add_restaurant():
 
     try:
         restaurant = Restaurant(
-            name="Zaitoon Restaurant",
-            instagram_username="zaitoonksa",
-            instagram_url="https://www.instagram.com/zaitoonksa",
-            email="info@zaitoonksa.com",
-            location="Madinah",
+            name="Riwayat tabaq _ رواية طبق",
+            instagram_username="riwayettabaq.res",
+            instagram_url="https://www.instagram.com/riwayettabaq.res",
+            email="riwayattabaq899@gmail.com",
+            location="Al Bahah",
         )
 
         db.add(restaurant)

@@ -7,7 +7,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from langchain.agents import create_agent
 from langchain_openai import ChatOpenAI
-from .research_prompt import RESEARCH_AGENT_PROMPT
+##from .research_prompt import RESEARCH_AGENT_PROMPT
 
 from .research_models import (
     AnalysisCoverage,
@@ -41,64 +41,152 @@ DEFAULT_LOOKBACK_DAYS = 90
 # =========================================================
 # RESEARCH AGENT
 # =========================================================
+def run_research_agent(
+    restaurant: RestaurantInfo,
+    content_limit: int = DEFAULT_CONTENT_LIMIT,
+    lookback_days: int = DEFAULT_LOOKBACK_DAYS,
+) -> ResearchProfile:
+   
 
-def run_research_pipeline(
-    restaurant_id: int,
-    name: str,
-    instagram_username: str,
-    email: str | None = None,
-    location: str | None = None,
-    content_limit: int = 15,
-    lookback_days: int = 90,
-) -> dict:
-    """
-    Run the complete Instagram research workflow for one restaurant.
+    if content_limit <= 0:
+        raise ValueError("content_limit must be greater than 0")
 
-    Executes profile scraping, profile analysis, recent-content scraping,
-    Reel enrichment, content analysis, deterministic metric calculation,
-    and research-signal generation.
+    run_started_at = datetime.now(timezone.utc).isoformat()
+    username = restaurant.instagram_username
 
-    Returns the complete validated ResearchProfile.
-    """
+    # 1) Scrape the Instagram profile.
+    profile_raw = scrape_instagram_profile(username)
+    profile = InstagramProfile.model_validate(profile_raw)
 
-    restaurant = RestaurantInfo(
-        restaurant_id=restaurant_id,
-        name=name,
-        instagram_username=instagram_username,
-        email=email,
-        location=location,
+    # 2) Analyze the already-scraped profile with the LLM.
+    profile_analysis_raw = analyze_instagram_profile(
+        profile=profile.model_dump(),
+        known_email=restaurant.email,
+        known_location=restaurant.location,
     )
+    profile_analysis = ProfileAnalysis.model_validate(profile_analysis_raw)
 
-    report, output_path = run_research_agent(
-        restaurant=restaurant,
-        content_limit=content_limit,
+    # 3) Scrape one recent-content window.
+    recent_content = scrape_recent_instagram_content(
+        username=username,
+        limit=content_limit,
         lookback_days=lookback_days,
     )
 
-    return {
-        "research_profile": report.model_dump(mode="json"),
-        "output_path": str(output_path),
-    }
+    # 4) Enrich Reel items that belong to that same content window.
+    enriched_content = enrich_reels_for_recent_content(
+        username=username,
+        recent_content=recent_content,
+    )
 
-RESEARCH_TOOLS = [
-    run_research_pipeline,
-]
+    # 5) Analyze each scraped content item with the LLM.
+    analyzed_content_raw = analyze_instagram_content(enriched_content)
+    analyzed_content = [
+        AnalyzedContent.model_validate(item) for item in analyzed_content_raw
+    ]
+
+    # 6) Calculate deterministic metrics from the analyzed evidence.
+    metrics_raw = calculate_research_metrics(
+        profile=profile.model_dump(),
+        analyzed_content=analyzed_content_raw,
+    )
+    metrics = ResearchMetrics.model_validate(metrics_raw)
+
+    # 7) Build descriptive, evidence-backed signals for qualification handoff.
+    research_signals_raw = build_research_signals(
+        metrics=metrics.model_dump(),
+        analyzed_content=analyzed_content_raw,
+    )
+    research_signals = [
+        ResearchSignal.model_validate(item) for item in research_signals_raw
+    ]
+
+    coverage = _build_coverage(
+        content_limit=content_limit,
+        scraped_content=enriched_content,
+        analyzed_content=analyzed_content_raw,
+    )
+
+    data_quality = _build_data_quality(
+        profile=profile.model_dump(),
+        scraped_content=enriched_content,
+        analyzed_content=analyzed_content_raw,
+        reel_enrichment_called=True,
+    )
+
+    report = ResearchProfile(
+        restaurant=restaurant,
+        analysis_metadata=AnalysisMetadata(
+            status=data_quality.status,
+            analyzed_at=run_started_at,
+        ),
+        profile=profile,
+        profile_analysis=profile_analysis,
+        metrics=metrics,
+        research_signals=research_signals,
+        content=analyzed_content,
+        analysis_coverage=coverage,
+        data_quality=data_quality,
+    )
+
+    return report
+# def run_research_pipeline(
+#     restaurant_id: int,
+#     name: str,
+#     instagram_username: str,
+#     email: str | None = None,
+#     location: str | None = None,
+#     content_limit: int = 15,
+#     lookback_days: int = 90,
+# ) -> dict:
+#     """
+#     Run the complete Instagram research workflow for one restaurant.
+
+#     Executes profile scraping, profile analysis, recent-content scraping,
+#     Reel enrichment, content analysis, deterministic metric calculation,
+#     and research-signal generation.
+
+#     Returns the complete validated ResearchProfile.
+#     """
+
+#     restaurant = RestaurantInfo(
+#         restaurant_id=restaurant_id,
+#         name=name,
+#         instagram_username=instagram_username,
+#         email=email,
+#         location=location,
+#     )
+
+#     report, output_path = run_research_agent(
+#         restaurant=restaurant,
+#         content_limit=content_limit,
+#         lookback_days=lookback_days,
+#     )
+
+#     return {
+#         "research_profile": report.model_dump(mode="json"),
+#         "output_path": str(output_path),
+#     }
+
+# RESEARCH_TOOLS = [
+#     run_research_pipeline,
+# ]
 
 
-research_llm = ChatOpenAI(
-    model=os.getenv("OPENAI_MODEL", "gpt-5.6-luna"),
-    use_responses_api=True,
-    timeout=120,
-    max_retries=3,
-)
+# research_llm = ChatOpenAI(
+#     model=os.getenv("OPENAI_MODEL", "gpt-5.6-luna"),
+#     use_responses_api=True,
+#     timeout=120,
+#     max_retries=3,
+# )
 
 
 
-research_agent = create_agent(
-    model=research_llm,
-    tools=RESEARCH_TOOLS,
-    system_prompt=RESEARCH_AGENT_PROMPT,
-)
+# research_agent = create_agent(
+#     model=research_llm,
+#     tools=RESEARCH_TOOLS,
+#     system_prompt=RESEARCH_AGENT_PROMPT,
+# )
 
 
 
@@ -288,94 +376,3 @@ def save_research_profile(report: ResearchProfile) -> Path:
 # =========================================================
 # STANDALONE RESEARCH AGENT
 # =========================================================
-
-
-def run_research_agent(
-    restaurant: RestaurantInfo,
-    content_limit: int = DEFAULT_CONTENT_LIMIT,
-    lookback_days: int = DEFAULT_LOOKBACK_DAYS,
-) -> ResearchProfile:
-   
-
-    if content_limit <= 0:
-        raise ValueError("content_limit must be greater than 0")
-
-    run_started_at = datetime.now(timezone.utc).isoformat()
-    username = restaurant.instagram_username
-
-    # 1) Scrape the Instagram profile.
-    profile_raw = scrape_instagram_profile(username)
-    profile = InstagramProfile.model_validate(profile_raw)
-
-    # 2) Analyze the already-scraped profile with the LLM.
-    profile_analysis_raw = analyze_instagram_profile(
-        profile=profile.model_dump(),
-        known_email=restaurant.email,
-        known_location=restaurant.location,
-    )
-    profile_analysis = ProfileAnalysis.model_validate(profile_analysis_raw)
-
-    # 3) Scrape one recent-content window.
-    recent_content = scrape_recent_instagram_content(
-        username=username,
-        limit=content_limit,
-        lookback_days=lookback_days,
-    )
-
-    # 4) Enrich Reel items that belong to that same content window.
-    enriched_content = enrich_reels_for_recent_content(
-        username=username,
-        recent_content=recent_content,
-    )
-
-    # 5) Analyze each scraped content item with the LLM.
-    analyzed_content_raw = analyze_instagram_content(enriched_content)
-    analyzed_content = [
-        AnalyzedContent.model_validate(item) for item in analyzed_content_raw
-    ]
-
-    # 6) Calculate deterministic metrics from the analyzed evidence.
-    metrics_raw = calculate_research_metrics(
-        profile=profile.model_dump(),
-        analyzed_content=analyzed_content_raw,
-    )
-    metrics = ResearchMetrics.model_validate(metrics_raw)
-
-    # 7) Build descriptive, evidence-backed signals for qualification handoff.
-    research_signals_raw = build_research_signals(
-        metrics=metrics.model_dump(),
-        analyzed_content=analyzed_content_raw,
-    )
-    research_signals = [
-        ResearchSignal.model_validate(item) for item in research_signals_raw
-    ]
-
-    coverage = _build_coverage(
-        content_limit=content_limit,
-        scraped_content=enriched_content,
-        analyzed_content=analyzed_content_raw,
-    )
-
-    data_quality = _build_data_quality(
-        profile=profile.model_dump(),
-        scraped_content=enriched_content,
-        analyzed_content=analyzed_content_raw,
-        reel_enrichment_called=True,
-    )
-
-    report = ResearchProfile(
-        restaurant=restaurant,
-        analysis_metadata=AnalysisMetadata(
-            status=data_quality.status,
-            analyzed_at=run_started_at,
-        ),
-        profile=profile,
-        profile_analysis=profile_analysis,
-        metrics=metrics,
-        research_signals=research_signals,
-        content=analyzed_content,
-        analysis_coverage=coverage,
-        data_quality=data_quality,
-    )
-
-    return report
