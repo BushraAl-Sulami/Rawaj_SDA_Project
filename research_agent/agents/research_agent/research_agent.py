@@ -294,7 +294,7 @@ def run_research_agent(
     restaurant: RestaurantInfo,
     content_limit: int = DEFAULT_CONTENT_LIMIT,
     lookback_days: int = DEFAULT_LOOKBACK_DAYS,
-) -> tuple[ResearchProfile, Path]:
+) -> ResearchProfile:
    
 
     if content_limit <= 0:
@@ -378,5 +378,4 @@ def run_research_agent(
         data_quality=data_quality,
     )
 
-    output_path = save_research_profile(report)
-    return report, output_path
+    return report

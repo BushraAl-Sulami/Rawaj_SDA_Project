@@ -444,30 +444,92 @@ def enrich_reels_for_recent_content(
     recent_content: list[dict],
 ) -> list[dict]:
     """
-    Enrich Reel items that already belong to the latest content window.
+    Enrich ONLY Reel items already present in recent_content.
 
-    This function does NOT create a second independent Reel sample. It calls the
-    official Apify Reel actor, then matches returned Reels back to the existing
-    recent_content items by content ID / shortcode. Matched items receive
-    transcript, Reel views/plays, duration, shares when available, and audio
-    metadata. Non-Reel images/videos remain in the same content list unchanged.
+    Instead of scraping the restaurant's whole Reel feed, this function:
+    1. Identifies Reels inside recent_content.
+    2. Builds direct Reel URLs.
+    3. Sends only those Reel URLs to the Apify Reel scraper.
+    4. Matches the returned Reel data back to the original content items.
 
-    Args:
-        username: Instagram username without @.
-        recent_content: Output from scrape_recent_instagram_content.
+    Non-Reel posts remain unchanged.
     """
 
     if not recent_content:
         return []
 
-    # We use the SAME window size only as a discovery ceiling for matching.
-    # The output still contains only the original recent_content items.
+    # Keep parameter for compatibility with existing calls.
+    # We no longer scrape the whole account by username.
+    _ = username
+
+    content_models: list[ScrapedContent] = [
+        ScrapedContent.model_validate(item)
+        for item in recent_content
+    ]
+
+    reel_urls: list[str] = []
+
+    # ---------------------------------------------------------
+    # 1. Identify ONLY Reels already inside recent_content
+    # ---------------------------------------------------------
+    for item_model in content_models:
+
+        product_type = (
+            item_model.raw_data.product_type or ""
+        ).strip().lower()
+
+        content_url = (
+            item_model.raw_data.content_url or ""
+        ).strip()
+
+        # Instagram/Apify commonly labels Reels as "clips".
+        is_reel = (
+            product_type in {"clips", "clip", "reel", "reels"}
+            or "/reel/" in content_url.lower()
+            or "/reels/" in content_url.lower()
+        )
+
+        if not is_reel:
+            continue
+
+        # Prefer the existing direct Reel URL.
+        if "/reel/" in content_url.lower() or "/reels/" in content_url.lower():
+            reel_url = content_url
+
+        # Otherwise construct the Reel URL from its shortcode.
+        elif item_model.short_code:
+            reel_url = (
+                f"https://www.instagram.com/reel/"
+                f"{item_model.short_code}/"
+            )
+
+        else:
+            # Cannot target this Reel directly.
+            continue
+
+        if reel_url not in reel_urls:
+            reel_urls.append(reel_url)
+
+    # No Reels in the selected content window.
+    if not reel_urls:
+        return [
+            item_model.model_dump()
+            for item_model in content_models
+        ]
+
+    print(
+        f"Found {len(reel_urls)} Reel(s) "
+        f"inside {len(content_models)} recent content items."
+    )
+
+    # ---------------------------------------------------------
+    # 2. Scrape ONLY those exact Reels
+    # ---------------------------------------------------------
     reel_rows = _run_apify_actor(
         REEL_ACTOR,
         {
-            "username": [username],
-            "resultsLimit": max(1, len(recent_content)),
-            "skipPinnedPosts": True,
+            "username": reel_urls,
+            "skipPinnedPosts": False,
             "skipTrialReels": False,
             "includeSharesCount": False,
             "includeTranscript": True,
@@ -475,49 +537,87 @@ def enrich_reels_for_recent_content(
         },
     )
 
+    # ---------------------------------------------------------
+    # 3. Build lookup maps
+    # ---------------------------------------------------------
     reel_by_id: dict[str, dict] = {}
     reel_by_shortcode: dict[str, dict] = {}
 
     for reel in reel_rows:
+
         reel_id = reel.get("id")
-        short_code = reel.get("shortCode") or _shortcode_from_url(reel.get("url"))
+
+        short_code = (
+            reel.get("shortCode")
+            or _shortcode_from_url(reel.get("url"))
+        )
+
         if reel_id is not None:
             reel_by_id[str(reel_id)] = reel
+
         if short_code:
             reel_by_shortcode[str(short_code)] = reel
 
+    # ---------------------------------------------------------
+    # 4. Merge Reel details into the ORIGINAL recent content
+    # ---------------------------------------------------------
     enriched: list[dict] = []
 
-    for item in recent_content:
-        item_model = ScrapedContent.model_validate(item)
+    for item_model in content_models:
 
         match = None
-        if item_model.content_id and item_model.content_id in reel_by_id:
+
+        if (
+            item_model.content_id
+            and item_model.content_id in reel_by_id
+        ):
             match = reel_by_id[item_model.content_id]
-        elif item_model.short_code and item_model.short_code in reel_by_shortcode:
+
+        elif (
+            item_model.short_code
+            and item_model.short_code in reel_by_shortcode
+        ):
             match = reel_by_shortcode[item_model.short_code]
 
         if match:
+
             reel_details = _normalize_reel_details(match)
+
             item_model.reel_details = reel_details
 
-            # The common raw data always remains available for Reel/video items.
-            # Reel enrichment can fill richer engagement fields if the main feed
-            # scraper did not provide them.
+            # Fill engagement fields only when missing
+            # from the main content scraper.
             if item_model.raw_data.likes is None:
-                item_model.raw_data.likes = match.get("likesCount")
+                item_model.raw_data.likes = match.get(
+                    "likesCount"
+                )
+
             if item_model.raw_data.comments is None:
-                item_model.raw_data.comments = match.get("commentsCount")
+                item_model.raw_data.comments = match.get(
+                    "commentsCount"
+                )
+
             if item_model.raw_data.views is None:
-                item_model.raw_data.views = reel_details.views or reel_details.plays
+                item_model.raw_data.views = (
+                    reel_details.views
+                    or reel_details.plays
+                )
+
             if not item_model.raw_data.video_url:
-                item_model.raw_data.video_url = match.get("videoUrl")
+                item_model.raw_data.video_url = match.get(
+                    "videoUrl"
+                )
 
-            # Prefer Reel thumbnail(s) only when feed images were unavailable.
+            # Use Reel thumbnail only when the main scraper
+            # did not already provide an image.
             if not item_model.raw_data.image_urls:
-                item_model.raw_data.image_urls = _extract_images(match)
+                item_model.raw_data.image_urls = (
+                    _extract_images(match)
+                )
 
-        enriched.append(item_model.model_dump())
+        enriched.append(
+            item_model.model_dump()
+        )
 
     return enriched
 # 
