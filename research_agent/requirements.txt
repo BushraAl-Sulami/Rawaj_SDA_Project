@@ -1,0 +1,8 @@
+apify-client
+python-dotenv
+langgraph
+langchain
+langchain-openai
+pydantic
+typing-extensions
+openai
